@@ -146,7 +146,7 @@ function Hero() {
       style={{
         backgroundImage: "url('/images/hero.jpg')",
         backgroundSize: "cover",
-        backgroundPosition: "80% center",
+        backgroundPosition: "60% center",
       }}
     >
       {/* Gradient overlays */}

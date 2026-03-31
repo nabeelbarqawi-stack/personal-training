@@ -143,21 +143,15 @@ function Hero() {
     <section
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: "url('/images/hero.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <Image
-          src="/images/hero.jpg"
-          alt="Javier Gomez training on the beach"
-          fill
-          className="object-cover object-center"
-          priority
-          onError={() => {}}
-        />
-        {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30" />
-      </div>
+      {/* Gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/40" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-20 w-full">
@@ -597,18 +591,15 @@ function Results() {
 ───────────────────────────────────────── */
 function CTABanner() {
   return (
-    <section className="relative py-32 overflow-hidden bg-black">
-      {/* Background photo with heavy overlay */}
-      <div className="absolute inset-0">
-        <Image
-          src="/images/hero.jpg"
-          alt=""
-          fill
-          className="object-cover object-center opacity-20"
-          onError={() => {}}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black" />
-      </div>
+    <section
+      className="relative py-32 overflow-hidden bg-black"
+      style={{
+        backgroundImage: "url('/images/hero.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black" />
 
       {/* Gold accent lines */}
       <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#c9a84c]" />
